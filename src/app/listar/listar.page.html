@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>listar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngFor="let item of items">
+    <ion-avatar item-start>
+      <img src={{item.imagem}}>
+    </ion-avatar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>{{item.nome}}</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>{{item.melhores_destinos}}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+</ion-content>
